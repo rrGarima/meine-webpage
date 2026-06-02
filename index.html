@@ -1,8 +1,123 @@
 <!doctype html>
-<html>
-  <head><title>Meine Seite</title></head>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mango — ästhetische Infoseite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
-    <h1>Hallo Welt</h1>
-    <p>Das ist meine erste Webseite.</p>
+    <main class="site">
+      <header class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1 class="title">Mango</h1>
+            <p class="subtitle">Tropisch, süß und samtig — die perfekte cremige Versuchung.</p>
+            <a class="btn" href="#sorten">Sorten entdecken</a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <!-- Stylisierte Mango SVG -->
+            <svg viewBox="0 0 300 300" class="mango-svg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#FFD27D"/>
+                  <stop offset="60%" stop-color="#FFB86B"/>
+                  <stop offset="100%" stop-color="#FF8C6A"/>
+                </linearGradient>
+                <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#FFC98A" flood-opacity="0.35"/>
+                </filter>
+              </defs>
+              <g filter="url(#soft)">
+                <path d="M180 40c40 10 90 60 40 130s-140 70-170 10S110 10 180 40z" fill="url(#g1)"/>
+                <ellipse cx="120" cy="140" rx="18" ry="36" fill="#FFDCA3" opacity="0.22" />
+              </g>
+              <path d="M210 35c6 8 8 18 2 30-6 12-20 22-28 28" stroke="#6FA96B" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <section class="intro wrapper">
+        <div class="soft-card">
+          <h2>Was ist eine Mango?</h2>
+          <p>Die Mango ist eine tropische Steinfrucht mit cremigem, aromatischem Fruchtfleisch — geschätzt für ihr süßes, blumiges Aroma und ihre Vielseitigkeit in der Küche.</p>
+        </div>
+      </section>
+
+      <section class="features wrapper">
+        <div class="features-grid">
+          <article class="feature card fade-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#6FA96B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12h20" stroke="#6FA96B" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Herkunft 🌍</h3>
+            <p>Ursprünglich aus Südasien — eine Frucht mit globaler Geschichte und Vielfalt.</p>
+          </article>
+
+          <article class="feature card fade-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v18" stroke="#D99A2B" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Geschmack 🍯</h3>
+            <p>Reich, süß und leicht floral mit einer buttrigen, cremigen Textur.</p>
+          </article>
+
+          <article class="feature card fade-in">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7h16v10H4z" stroke="#FF8C6A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Verwendung 🥭</h3>
+            <p>Ideal in Desserts, Smoothies, Salsas oder pur — immer ein Hauch Luxus.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sorten" class="varieties wrapper">
+        <h2 class="section-title">Mango Sorten</h2>
+        <div class="varieties-grid">
+          <article class="variety card fade-in-slow">
+            <div class="symbol" aria-hidden="true">🥭</div>
+            <h4>Alphonso</h4>
+            <p>Intensiv aromatisch, samtig und besonders geschätzt in Südasien.</p>
+          </article>
+
+          <article class="variety card fade-in-slow">
+            <div class="symbol" aria-hidden="true">🍑</div>
+            <h4>Kent</h4>
+            <p>Groß, saftig mit butterartigem Fruchtfleisch und mild-süßem Aroma.</p>
+          </article>
+
+          <article class="variety card fade-in-slow">
+            <div class="symbol" aria-hidden="true">🌞</div>
+            <h4>Ataulfo</h4>
+            <p>Klein, süß und sehr cremig — oft als Dessert-Mango genutzt.</p>
+          </article>
+
+          <article class="variety card fade-in-slow">
+            <div class="symbol" aria-hidden="true">✨</div>
+            <h4>Tommy Atkins</h4>
+            <p>Robust, weit verbreitet und gut lagerfähig mit ausgewogenem Geschmack.</p>
+          </article>
+
+          <article class="variety card fade-in-slow">
+            <div class="symbol" aria-hidden="true">🌿</div>
+            <h4>Keitt</h4>
+            <p>Groß, saftig und oft spät in der Saison verfügbar.</p>
+          </article>
+
+          <article class="variety card fade-in-slow">
+            <div class="symbol" aria-hidden="true">🍃</div>
+            <h4>Palmer</h4>
+            <p>Elegant im Geschmack, mit feiner Textur und schönem Aroma.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Designed with love — Mango Aesthetic.</p>
+      </footer>
+    </main>
   </body>
 </html>
